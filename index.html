@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Weather App<i class="fa-solid fa-cloud-moon"></i></h2>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" class="cityInput" placeholder="Enter City Name">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div id="weatherCard" class="weatherCard">
+            <img src="" alt="" id="icon">
+
+            <h2 id="city" class="city"></h2>
+
+            <h3 id="temp" class="temp"></h3>
+
+            <p id="condition" class="condition"></p>
+
+            <div class="details">
+                <div>
+                    <h3><i class="fa-solid fa-droplet"></i>Humidity</h3>
+                    <p id="humidity">0%</p>
+                </div>
+
+                <div>
+                    <h4><i class="fa-regular fa-cloud"></i>Wind speed</h4>
+                    <p id="windSpeed">0km/h</p>
+                </div>
+                
+            </div>
+
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <!-- <script src="scriptCPISM.js"></script> -->
+</body>
+</html>
